@@ -11,7 +11,7 @@ I purchased this one from Amazon for $13 bucks: https://a.co/d/gGwqthB
 
 Below is the output from shell:
 ```
-pi@Firewalla:~ (FWPSE) $ sudo ./USB-WiFi-MAC-Updater.sh
+pi@Firewalla:~ (FWPSE) $ sudo ./Firewalla-USB-WiFi-MAC-Updater.sh
 Interface: wlan0
 Physical MAC address: 90:de:80:3b:f6:bb
 New MAC address: 20:6d:31:3b:f6:bb
