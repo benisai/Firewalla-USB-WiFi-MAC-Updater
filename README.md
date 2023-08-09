@@ -3,8 +3,11 @@ This script will change the MAC address of your usb wifi RTL8811CU to 20:6d:31/2
 It will only update the first three octets of the MAC Address and keep the remaining. 
 It must have the chipset RTL8811CU. 
 I purchased this one from Amazon for $13 bucks: https://a.co/d/gGwqthB
+![image](https://github.com/benisai/Firewalla-USB-WiFi-MAC-Updater/assets/59147467/1f88f747-0887-4566-bb2f-d2ff20f4d7ff)
 
 
+
+Below is the output from shell:
 ```
 pi@Firewalla:~ (FWPSE) $ sudo ./USB-WiFi-MAC-Updater.sh
 Interface: wlan0
