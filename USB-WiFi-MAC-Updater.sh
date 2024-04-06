@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Function to change MAC address for a given interface
 change_mac_address() {
     interface="$1"
