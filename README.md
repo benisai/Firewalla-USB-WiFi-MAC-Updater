@@ -10,6 +10,24 @@ I purchased this one from Amazon for $13 bucks: https://a.co/d/gGwqthB
 
 
 
+# How to Use 
+Customized Scripts
+You can add some scripts to Gold/Purple so that it can be automatically executed when Firewalla service restarts (for example, when Gold/Purple reboots or software updates).
+
+These scripts can be placed under this folder /home/pi/.firewalla/config/post_main.d/ (create this folder if it does not exist)
+
+$ sudo mkdir /home/pi/.firewalla/config/post_main.d/
+$ cd /home/pi/.firewalla/config/post_main.d/
+$ sudo chmod +wr .
+ 
+
+Create a file with any name ending in with ".sh" and make it executable. For example:
+
+$ sudo nano /home/pi/.firewalla/config/post_main.d/update-usb-wifi-mac.sh
+$ sudo chmod +x /home/pi/.firewalla/config/post_main.d/update-usb-wifi-mac.sh
+Any files ending with ".sh" will be executed at boot time.
+
+
 Below is the output from shell:
 ```
 pi@Firewalla:~ (FWPSE) $ sudo chmod +x ./USB-WiFi-MAC-Updater.sh
