@@ -33,20 +33,23 @@ Any files ending with ".sh" will be executed at boot time.
 
 
 Below is the output from shell:
+
 ```
-pi@Firewalla:~ (FWPSE) $ sudo chmod +x ./USB-WiFi-MAC-Updater.sh
-pi@Firewalla:~ (FWPSE) $ sudo ./USB-WiFi-MAC-Updater.sh
+pi@Firewalla:~ (FWPSE) $ cd /home/pi/.firewalla/config/post_main.d/
+pi@Firewalla:~/.firewalla/config/post_main.d (FWPSE) $ sudo chmod +x ./update-usb-wifi-mac.sh 
+pi@Firewalla:~/.firewalla/config/post_main.d (FWPSE) $ sudo ./update-usb-wifi-mac.sh 
 
 Output:
 
+Checking interface: wlan0
+Current MAC address: 90:de:80:a3:1f:1d
+WARNING: MAC address of wlan0 does not match the expected prefix. Correcting...
 Interface: wlan0
-Physical MAC address: 90:de:80:3b:f6:bb
-New MAC address: 20:6d:31:3b:f6:bb
+Physical MAC address: 90:de:80:a3:1f:1d
+New MAC address: 20:6d:31:a3:1f:1d
 Changing MAC address for wlan0...
 MAC address changed successfully for wlan0!
-Interface: wlan1
-Physical MAC address: 92:de:80:3b:f6:bb
-New MAC address: 22:6d:31:3b:f6:bb
-Changing MAC address for wlan1...
-MAC address changed successfully for wlan1!
+Checking interface: wlan1
+Current MAC address: 22:6d:31:a3:1f:1d
+MAC address of wlan1 is as expected.
 ```
