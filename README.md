@@ -1,3 +1,6 @@
+# There have been reports that this no longer works. I have a feeling that Firewalla added additional code to detect a real USB Wi-Fi. Sorry dudes. i don't know enough to get it working again. so much for 'open source' on Firewallas side.
+
+
 # Firewalla MAC Updater Script for Generic RTL8811CU
 This script will change the MAC address of your generic usb wifi RTL8811CU to 20:6d:31:xx:xx:xx (2.4ghz) / 22:6d:31:xx:xx:xx (5ghz) so the phone APP recongizes the USB WIFI.  
 It will only update the first three octets of the MAC Address and keep the remaining. 
